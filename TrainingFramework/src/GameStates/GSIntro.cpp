@@ -26,7 +26,7 @@ void GSIntro::Init()
 	m_BackGround->Set2DPosition(screenWidth / 2, screenHeight / 2);
 	m_BackGround->SetSize(screenWidth, screenHeight);
 	//logo
-	texture = ResourceManagers::GetInstance()->GetTexture("logo");
+	texture = ResourceManagers::GetInstance()->GetTexture("logo1");
 	m_logo = std::make_shared<Sprite2D>(model, shader, texture);
 	m_logo->Set2DPosition(screenWidth / 2, screenHeight / 2);
 	m_logo->SetSize(150, 150);

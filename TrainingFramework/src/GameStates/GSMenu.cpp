@@ -27,7 +27,7 @@ void GSMenu::Init()
 	m_BackGround->SetSize(screenWidth, screenHeight);
 
 	//play button
-	texture = ResourceManagers::GetInstance()->GetTexture("button_play");
+	texture = ResourceManagers::GetInstance()->GetTexture("Play");
 	std::shared_ptr<GameButton> button = std::make_shared<GameButton>(model, shader, texture);
 	button->Set2DPosition(screenWidth / 2, 200);
 	button->SetSize(200, 50);
@@ -36,7 +36,7 @@ void GSMenu::Init()
 		});
 	m_listButton.push_back(button);
 	//resume button
-	texture = ResourceManagers::GetInstance()->GetTexture("button_resume");
+	texture = ResourceManagers::GetInstance()->GetTexture("RESUME");
 	button = std::make_shared<GameButton>(model, shader, texture);
 	button->Set2DPosition(screenWidth / 2, 300);
 	button->SetSize(200, 50);
@@ -45,7 +45,7 @@ void GSMenu::Init()
 		});
 	m_listButton.push_back(button);
 	//setting button
-	texture = ResourceManagers::GetInstance()->GetTexture("button_setting");
+	texture = ResourceManagers::GetInstance()->GetTexture("Setting");
 	button = std::make_shared<GameButton>(model, shader, texture);
 	button->Set2DPosition(screenWidth / 2, 400);
 	button->SetSize(200, 50);
@@ -55,7 +55,7 @@ void GSMenu::Init()
 	m_listButton.push_back(button);
 
 	//exit button
-	texture = ResourceManagers::GetInstance()->GetTexture("button_quit");
+	texture = ResourceManagers::GetInstance()->GetTexture("QUIT");
 	button = std::make_shared<GameButton>(model, shader, texture);
 	button->Set2DPosition(screenWidth / 2, 500);
 	button->SetSize(200, 50);
@@ -73,8 +73,8 @@ void GSMenu::Init()
 	//text game title more
 	shader = ResourceManagers::GetInstance()->GetShader("TextShader");
 	font = ResourceManagers::GetInstance()->GetFont("ariblk");
-	m_Text_gameInfo = std::make_shared< Text>(shader, font, "Information@copyinformation", TEXT_COLOR::BLACK, 0.75);
-	m_Text_gameInfo->Set2DPosition(Vector2(screenWidth / 2.5 - 80, 600));
+	m_Text_gameInfo = std::make_shared< Text>(shader, font, "GAMELOFT", TEXT_COLOR::BLACK, 0.75);
+	m_Text_gameInfo->Set2DPosition(Vector2(screenWidth / 2.5 - 60, 600));
 }
 
 void GSMenu::Exit()

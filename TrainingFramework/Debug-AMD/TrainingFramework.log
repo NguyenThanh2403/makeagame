@@ -1,13 +1,13 @@
 ﻿  cl : Command line warning D9035 : option 'Gm' has been deprecated and will be removed in a future release
   GSMenu.cpp
-C:\Users\loana\Downloads\Programming_lesson_06\Programming_lesson_06\Programming_lesson_06\TrainingFramework\src\GameStates\GSMenu.cpp(26,60): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\loana\Downloads\Programming_lesson_06\Programming_lesson_06\Programming_lesson_06\TrainingFramework\src\GameStates\GSMenu.cpp(26,42): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\loana\Downloads\Programming_lesson_06\Programming_lesson_06\Programming_lesson_06\TrainingFramework\src\GameStates\GSMenu.cpp(32,36): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\loana\Downloads\Programming_lesson_06\Programming_lesson_06\Programming_lesson_06\TrainingFramework\src\GameStates\GSMenu.cpp(41,36): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\loana\Downloads\Programming_lesson_06\Programming_lesson_06\Programming_lesson_06\TrainingFramework\src\GameStates\GSMenu.cpp(50,36): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\loana\Downloads\Programming_lesson_06\Programming_lesson_06\Programming_lesson_06\TrainingFramework\src\GameStates\GSMenu.cpp(60,36): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\loana\Downloads\Programming_lesson_06\Programming_lesson_06\Programming_lesson_06\TrainingFramework\src\GameStates\GSMenu.cpp(72,59): warning C4244:  'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\loana\Downloads\Programming_lesson_06\Programming_lesson_06\Programming_lesson_06\TrainingFramework\src\GameStates\GSMenu.cpp(77,59): warning C4244:  'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\loana\Downloads\game\TrainingFramework\src\GameStates\GSMenu.cpp(26,60): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\loana\Downloads\game\TrainingFramework\src\GameStates\GSMenu.cpp(26,42): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\loana\Downloads\game\TrainingFramework\src\GameStates\GSMenu.cpp(32,36): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\loana\Downloads\game\TrainingFramework\src\GameStates\GSMenu.cpp(41,36): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\loana\Downloads\game\TrainingFramework\src\GameStates\GSMenu.cpp(50,36): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\loana\Downloads\game\TrainingFramework\src\GameStates\GSMenu.cpp(60,36): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\loana\Downloads\game\TrainingFramework\src\GameStates\GSMenu.cpp(72,59): warning C4244:  'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\loana\Downloads\game\TrainingFramework\src\GameStates\GSMenu.cpp(77,59): warning C4244:  'argument': conversion from 'double' to 'GLfloat', possible loss of data
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1555,71): warning C4244:  'argument': conversion from '_Ty' to 'float', possible loss of data
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1555,71): warning C4244:         with
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1555,71): warning C4244:         [
@@ -23,5 +23,5 @@ C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.2
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :         [
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :             _Ty=Text
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :         ]
-C:\Users\loana\Downloads\Programming_lesson_06\Programming_lesson_06\Programming_lesson_06\TrainingFramework\src\GameStates\GSMenu.cpp(71): message :  see reference to function template instantiation 'std::shared_ptr<Text> std::make_shared<Text,std::shared_ptr<Shaders>&,std::shared_ptr<Font>&,const char(&)[9],TEXT_COLOR,double>(std::shared_ptr<Shaders> &,std::shared_ptr<Font> &,const char (&)[9],TEXT_COLOR &&,double &&)' being compiled
-  TrainingFramework.vcxproj -> C:\Users\loana\Downloads\Programming_lesson_06\Programming_lesson_06\Programming_lesson_06\\BIN-AMD\TrainingFramework.exe
+C:\Users\loana\Downloads\game\TrainingFramework\src\GameStates\GSMenu.cpp(71): message :  see reference to function template instantiation 'std::shared_ptr<Text> std::make_shared<Text,std::shared_ptr<Shaders>&,std::shared_ptr<Font>&,const char(&)[9],TEXT_COLOR,double>(std::shared_ptr<Shaders> &,std::shared_ptr<Font> &,const char (&)[9],TEXT_COLOR &&,double &&)' being compiled
+  TrainingFramework.vcxproj -> C:\Users\loana\Downloads\game\\BIN-AMD\TrainingFramework.exe
