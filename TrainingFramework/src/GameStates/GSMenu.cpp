@@ -1,8 +1,5 @@
 #include "GSMenu.h"
 
-extern int screenWidth; //need get on Graphic engine
-extern int screenHeight; //need get on Graphic engine
-
 GSMenu::GSMenu()
 {
 
@@ -18,46 +15,50 @@ GSMenu::~GSMenu()
 void GSMenu::Init()
 {
 	auto model = ResourceManagers::GetInstance()->GetModel("Sprite2D");
-	auto texture = ResourceManagers::GetInstance()->GetTexture("Gmenu");
-
+	auto texture = ResourceManagers::GetInstance()->GetTexture("MenuBack");
+	
 	//BackGround
 	auto shader = ResourceManagers::GetInstance()->GetShader("TextureShader");
 	m_BackGround = std::make_shared<Sprite2D>(model, shader, texture);
-	m_BackGround->Set2DPosition(screenWidth / 2, screenHeight / 2);
-	m_BackGround->SetSize(screenWidth, screenHeight);
+	m_BackGround->Set2DPosition(Application::screenWidth / 2, Application::screenHeight / 2);
+	m_BackGround->SetSize(Application::screenWidth, Application::screenHeight);
+
 
 	//play button
-	texture = ResourceManagers::GetInstance()->GetTexture("Play");
+	texture = ResourceManagers::GetInstance()->GetTexture("button_play");
 	std::shared_ptr<GameButton> button = std::make_shared<GameButton>(model, shader, texture);
-	button->Set2DPosition(screenWidth / 2, 200);
+	button->Set2DPosition(Application::screenWidth / 2, 100);
 	button->SetSize(200, 50);
 	button->SetOnClick([]() {
+		SoundManager::GetInstance()->AddSound("yasuo_play");
+		SoundManager::GetInstance()->PlaySound("yasuo_play");
 		GameStateMachine::GetInstance()->ChangeState(StateTypes::STATE_Play);
 		});
 	m_listButton.push_back(button);
 	//resume button
-	texture = ResourceManagers::GetInstance()->GetTexture("RESUME");
+	texture = ResourceManagers::GetInstance()->GetTexture("button_quit");
 	button = std::make_shared<GameButton>(model, shader, texture);
-	button->Set2DPosition(screenWidth / 2, 300);
+	button->Set2DPosition(Application::screenWidth / 2, 200);
 	button->SetSize(200, 50);
 	button->SetOnClick([]() {
-		GameStateMachine::GetInstance()->ChangeState(StateTypes::STATE_Play);
-		});
-	m_listButton.push_back(button);
-	//setting button
-	texture = ResourceManagers::GetInstance()->GetTexture("Setting");
-	button = std::make_shared<GameButton>(model, shader, texture);
-	button->Set2DPosition(screenWidth / 2, 400);
-	button->SetSize(200, 50);
-	button->SetOnClick([]() {
-		GameStateMachine::GetInstance()->ChangeState(StateTypes::STATE_Intro);
+		exit(0);
 		});
 	m_listButton.push_back(button);
 
-	//exit button
-	texture = ResourceManagers::GetInstance()->GetTexture("QUIT");
+
+	//setting button
+	texture = ResourceManagers::GetInstance()->GetTexture("button_quit");
 	button = std::make_shared<GameButton>(model, shader, texture);
-	button->Set2DPosition(screenWidth / 2, 500);
+	button->Set2DPosition(Application::screenWidth / 2, 300);
+	button->SetSize(200, 50);
+	button->SetOnClick([]() {
+		exit(0);
+		});
+	m_listButton.push_back(button);
+	//exit button
+	texture = ResourceManagers::GetInstance()->GetTexture("button_quit");
+	button = std::make_shared<GameButton>(model, shader, texture);
+	button->Set2DPosition(Application::screenWidth / 2, 400);
 	button->SetSize(200, 50);
 	button->SetOnClick([]() {
 		exit(0);
@@ -67,14 +68,9 @@ void GSMenu::Init()
 
 	//text game title
 	shader = ResourceManagers::GetInstance()->GetShader("TextShader");
-	std::shared_ptr<Font> font = ResourceManagers::GetInstance()->GetFont("ariblk");
-	m_Text_gameName = std::make_shared< Text>(shader, font, "THE GAME", TEXT_COLOR::RED, 2.0);
-	m_Text_gameName->Set2DPosition(Vector2(screenWidth / 2.5 - 80, 120));
-	//text game title more
-	shader = ResourceManagers::GetInstance()->GetShader("TextShader");
-	font = ResourceManagers::GetInstance()->GetFont("ariblk");
-	m_Text_gameInfo = std::make_shared< Text>(shader, font, "GAMELOFT", TEXT_COLOR::BLACK, 0.75);
-	m_Text_gameInfo->Set2DPosition(Vector2(screenWidth / 2.5 - 60, 600));
+	std::shared_ptr<Font> font = ResourceManagers::GetInstance()->GetFont("arialbd");
+	m_Text_gameName = std::make_shared< Text>(shader, font, "HASAGI", TEXT_COLOR::GREEN, 1.0);
+	m_Text_gameName->Set2DPosition(Vector2(Application::screenWidth / 2 - 80, 50));
 }
 
 void GSMenu::Exit()
@@ -112,6 +108,10 @@ void GSMenu::HandleTouchEvents(int x, int y, bool bIsPressed)
 	}
 }
 
+void GSMenu::HandleMouseEvents(int x, int y)
+{
+}
+
 void GSMenu::Update(float deltaTime)
 {
 	m_BackGround->Update(deltaTime);
@@ -129,5 +129,4 @@ void GSMenu::Draw()
 		it->Draw();
 	}
 	m_Text_gameName->Draw();
-	m_Text_gameInfo->Draw();
 }
