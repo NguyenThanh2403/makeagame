@@ -69,7 +69,7 @@ void GSMenu::Init()
 	//text game title
 	shader = ResourceManagers::GetInstance()->GetShader("TextShader");
 	std::shared_ptr<Font> font = ResourceManagers::GetInstance()->GetFont("phong");
-	m_Text_gameName = std::make_shared< Text>(shader, font, "HASAGI", TEXT_COLOR::RED, 1.5);
+	m_Text_gameName = std::make_shared< Text>(shader, font, "  HASAGI", TEXT_COLOR::RED, 1.5);
 	m_Text_gameName->Set2DPosition(Vector2(Application::screenWidth / 2 - 80, 50));
 }
 

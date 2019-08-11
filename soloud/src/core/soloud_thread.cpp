@@ -64,7 +64,7 @@ namespace SoLoud
 				EnterCriticalSection(cs);
 			}
 		}
-
+		
 		void unlockMutex(void *aHandle)
 		{
 			CRITICAL_SECTION *cs = (CRITICAL_SECTION*)aHandle;

@@ -10,7 +10,7 @@ Enermy::Enermy(std::shared_ptr<Models>& model, std::shared_ptr<Shaders>& shader,
 	m_Cooldown = 0.0;
 	m_speed = 100;
 	m_MaxSpeed = 500;
-	m_Heal = 1;
+	m_Heal = 5;
 	m_Damage = 10;
 	m_Explosive = false;
 	m_SizeCollider = 20;

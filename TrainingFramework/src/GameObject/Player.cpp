@@ -127,6 +127,10 @@ void Player::CheckCollider(std::vector<std::shared_ptr<Bullet>>& listBullet, std
 			{
 				enermy->Explosive();
 				m_Heal -= enermy->GetDamage();
+					//SoundManager::GetInstance()->PauseSound("joke");
+					SoundManager::GetInstance()->AddSound("joke");
+					SoundManager::GetInstance()->PlaySound("joke");
+				
 			}
 		}
 	}
@@ -139,6 +143,7 @@ void Player::CheckCollider(std::vector<std::shared_ptr<Bullet>>& listBullet, std
 			{
 				bullet->SetActive(false);
 				m_Heal -= bullet->GetDamage();
+			
 			}
 		}
 	}
