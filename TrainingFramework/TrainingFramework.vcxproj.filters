@@ -87,6 +87,9 @@
     <ClCompile Include="src\GameObject\ExplosiveEffect.cpp">
       <Filter>src\GameObject</Filter>
     </ClCompile>
+    <ClCompile Include="Samurai.cpp">
+      <Filter>src\GameObject</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Application.h">
@@ -99,9 +102,6 @@
       <Filter>src\GameObject</Filter>
     </ClInclude>
     <ClInclude Include="src\GameObject\Bullet.h">
-      <Filter>src\GameObject</Filter>
-    </ClInclude>
-    <ClInclude Include="src\GameObject\Enermy.h">
       <Filter>src\GameObject</Filter>
     </ClInclude>
     <ClInclude Include="src\GameObject\Font.h">
@@ -168,6 +168,12 @@
       <Filter>src\Helper</Filter>
     </ClInclude>
     <ClInclude Include="src\GameObject\ExplosiveEffect.h">
+      <Filter>src\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameObject\Enermy.h">
+      <Filter>src\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Samurai.h">
       <Filter>src\GameObject</Filter>
     </ClInclude>
   </ItemGroup>

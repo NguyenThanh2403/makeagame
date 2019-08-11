@@ -20,7 +20,7 @@ void Bullet::Update(GLfloat deltatime)
 	if (!m_active)
 		return;
 	Vector2 pos = Get2DPosition();
-	pos.y = pos.y - m_speed * deltatime;
+	pos.x = pos.x - m_speed * deltatime;
 	Set2DPosition(pos);
 
 	if (pos.y <= 0 || pos.y > Application::screenHeight)

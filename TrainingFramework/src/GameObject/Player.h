@@ -15,6 +15,7 @@ public:
 
 	bool CanShoot();
 	void Shoot(std::vector<std::shared_ptr<Bullet>>& listBullet);
+	void Chem(Vector2 pos);
 
 	void CheckCollider(std::vector<std::shared_ptr<Bullet>>& listBullet, std::vector<std::shared_ptr<Enermy>> listEnermy);
 

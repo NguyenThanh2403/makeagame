@@ -10,6 +10,7 @@
 #include "Text.h"
 #include "Player.h"
 #include "Enermy.h"
+#include "../../Samurai.h"
 #include "Bullet.h"
 #include "ExplosiveEffect.h"
 
@@ -126,9 +127,12 @@ void GSPlay::HandleEvents()
 void GSPlay::HandleKeyEvents(int key, bool bIsPressed)
 {
 	switch (key) {
-	case 65:
+	case 66:
 		if (m_Player->CanShoot())
 			m_Player->Shoot(m_listBullet);
+		break;
+	case 65:
+		m_Player->Chem(m_Player->Get2DPosition());
 	}
 	
 	
@@ -289,12 +293,12 @@ void GSPlay::Draw()
 void GSPlay::CreateRandomEnermy()
 {
 
-	int range = Application::screenWidth - 10 + 1;
+	int range = Application::screenHeight - 10 + 1;
 	int num = rand() % range + 10;
 
 	Vector2 pos;
-	pos.x = num;
-	pos.y = 10;
+	pos.y = num;
+	pos.x = 10;
 
 	for (auto enermy : m_listEnermy)
 	{
@@ -312,7 +316,7 @@ void GSPlay::CreateRandomEnermy()
 	std::shared_ptr<Enermy> enermy = std::make_shared<Enermy>(model, shader, texture);
 	enermy->Set2DPosition(pos);
 	enermy->SetSize(50, 50);
-	enermy->SetRotation(180);
+	enermy->SetRotation(0);
 	m_listEnermy.push_back(enermy);
 }
 
@@ -320,13 +324,13 @@ void GSPlay::CreateRandomEnermy()
 void GSPlay::CreateRandomSamurai()
 {
 
-	int range = Application::screenHeight - 10 + 1;
+	int range = Application::screenWidth - 10 + 1;
 	
 	int num = rand() % range + 10;
 
 	Vector2 pos;
-	pos.y = num;
-	pos.x = 10;
+	pos.x = num;
+	pos.y = 10;
 
 	for (auto samurai : m_listSamurai)
 	{
@@ -341,11 +345,11 @@ void GSPlay::CreateRandomSamurai()
 	auto shader = ResourceManagers::GetInstance()->GetShader("TextureShader");
 	auto texture = ResourceManagers::GetInstance()->GetTexture("samurai");
 
-	std::shared_ptr<Enermy> samurai = std::make_shared<Enermy>(model, shader, texture);
+	std::shared_ptr<Samurai> samurai = std::make_shared<Samurai>(model, shader, texture);
 	samurai->Set2DPosition(pos);
 	samurai->SetSize(30, 30);
 	samurai->SetRotation(180);
-	m_listEnermy.push_back(samurai);
+	m_listSamurai.push_back(samurai);
 }
 
 void GSPlay::SpawnExplosive(Vector2 pos)

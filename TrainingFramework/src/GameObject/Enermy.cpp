@@ -40,10 +40,10 @@ void Enermy::Update(float deltaTime)
 	}
 
 	Vector2 pos = Get2DPosition();
-	pos.y = pos.y + m_speed * deltaTime;
+	pos.x = pos.x + m_speed * deltaTime;
 	Set2DPosition(pos);
 
-	if (pos.y > Application::screenHeight)
+	if (pos.x > Application::screenWidth)
 		m_active = false;
 }
 

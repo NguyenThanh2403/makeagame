@@ -1,5 +1,6 @@
 #include "Player.h"
 #include "GameManager/ResourceManagers.h"
+#include "ExplosiveEffect.h"
 
 Player::Player(std::shared_ptr<Models>& model, std::shared_ptr<Shaders>& shader, std::shared_ptr<Texture>& texture)
 	:Sprite2D(model, shader, texture)
@@ -82,7 +83,7 @@ bool Player::CanShoot()
 
 void Player::Shoot(std::vector<std::shared_ptr<Bullet>>& listBullet)
 {
-	SoundManager::GetInstance()->PlaySound("attack");
+	SoundManager::GetInstance()->PlaySound("nem");
 	m_Cooldown = m_MaxCooldown;
 	for (auto bullet : listBullet)
 	{
@@ -110,7 +111,18 @@ void Player::Shoot(std::vector<std::shared_ptr<Bullet>>& listBullet)
 
 
 }
+void Player::Chem(Vector2 pos) {
+	SoundManager::GetInstance()->PlaySound("attack");
+	auto model = ResourceManagers::GetInstance()->GetModel("Sprite2D");
+	auto texture = ResourceManagers::GetInstance()->GetTexture("Bom");
+	auto shader = ResourceManagers::GetInstance()->GetShader("SpriteShader");
+	std::shared_ptr<ExplosiveEffect> exp = std::make_shared<ExplosiveEffect>(model, shader, texture, Vector2(1070, 422), Vector2(267.5, 211), 0, 7, 0.7);
+	exp->SetSize(100, 100);
+	exp->Set2DPosition(pos);
+	exp->Draw();
 
+
+}
 float Player::distance(Vector2 pos, Vector2 target)
 {
 	return sqrt((pos.x - target.x) * (pos.x - target.x) + (pos.y - target.y) * (pos.y - target.y));
