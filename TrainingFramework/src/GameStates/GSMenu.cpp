@@ -25,7 +25,7 @@ void GSMenu::Init()
 
 
 	//play button
-	texture = ResourceManagers::GetInstance()->GetTexture("button_play");
+	texture = ResourceManagers::GetInstance()->GetTexture("BPlay");
 	std::shared_ptr<GameButton> button = std::make_shared<GameButton>(model, shader, texture);
 	button->Set2DPosition(Application::screenWidth / 2, 100);
 	button->SetSize(200, 50);
@@ -36,7 +36,7 @@ void GSMenu::Init()
 		});
 	m_listButton.push_back(button);
 	//resume button
-	texture = ResourceManagers::GetInstance()->GetTexture("button_quit");
+	texture = ResourceManagers::GetInstance()->GetTexture("BSetting");
 	button = std::make_shared<GameButton>(model, shader, texture);
 	button->Set2DPosition(Application::screenWidth / 2, 200);
 	button->SetSize(200, 50);
@@ -47,7 +47,7 @@ void GSMenu::Init()
 
 
 	//setting button
-	texture = ResourceManagers::GetInstance()->GetTexture("button_quit");
+	texture = ResourceManagers::GetInstance()->GetTexture("BQuit");
 	button = std::make_shared<GameButton>(model, shader, texture);
 	button->Set2DPosition(Application::screenWidth / 2, 300);
 	button->SetSize(200, 50);
@@ -56,7 +56,7 @@ void GSMenu::Init()
 		});
 	m_listButton.push_back(button);
 	//exit button
-	texture = ResourceManagers::GetInstance()->GetTexture("button_quit");
+	texture = ResourceManagers::GetInstance()->GetTexture("BQuit");
 	button = std::make_shared<GameButton>(model, shader, texture);
 	button->Set2DPosition(Application::screenWidth / 2, 400);
 	button->SetSize(200, 50);
@@ -68,8 +68,8 @@ void GSMenu::Init()
 
 	//text game title
 	shader = ResourceManagers::GetInstance()->GetShader("TextShader");
-	std::shared_ptr<Font> font = ResourceManagers::GetInstance()->GetFont("arialbd");
-	m_Text_gameName = std::make_shared< Text>(shader, font, "HASAGI", TEXT_COLOR::GREEN, 1.0);
+	std::shared_ptr<Font> font = ResourceManagers::GetInstance()->GetFont("phong");
+	m_Text_gameName = std::make_shared< Text>(shader, font, "HASAGI", TEXT_COLOR::RED, 1.5);
 	m_Text_gameName->Set2DPosition(Vector2(Application::screenWidth / 2 - 80, 50));
 }
 

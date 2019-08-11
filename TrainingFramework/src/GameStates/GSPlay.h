@@ -1,5 +1,6 @@
 #pragma once
 #include "gamestatebase.h"
+#include "GameButton.h"
 
 class Player;
 class Bullet;
@@ -42,5 +43,7 @@ private:
 	float m_SpawnCooldown;
 	void CreateRandomEnermy();
 	void SpawnExplosive(Vector2 pos);
+	std::list<std::shared_ptr<GameButton>>	m_listButton;
+	
 };
 

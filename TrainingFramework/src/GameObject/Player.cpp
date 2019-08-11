@@ -90,7 +90,7 @@ void Player::Shoot(std::vector<std::shared_ptr<Bullet>>& listBullet)
 		{
 			bullet->SetActive(true);
 			bullet->Set2DPosition(Get2DPosition());
-			bullet->SetSpeed(100);
+			bullet->SetSpeed(150);
 			bullet->SetType(BULLET_TYPE::Player);
 			return;
 		}
@@ -103,7 +103,7 @@ void Player::Shoot(std::vector<std::shared_ptr<Bullet>>& listBullet)
 	std::shared_ptr<Bullet> bullet = std::make_shared<Bullet>(model, shader, texture);
 	bullet->SetSize(20, 20);
 	bullet->Set2DPosition(Get2DPosition());
-	bullet->SetSpeed(100);
+	bullet->SetSpeed(150);
 	bullet->SetType(BULLET_TYPE::Player);
 
 	listBullet.push_back(bullet);

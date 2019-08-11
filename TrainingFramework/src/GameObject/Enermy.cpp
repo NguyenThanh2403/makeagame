@@ -6,11 +6,11 @@ Enermy::Enermy(std::shared_ptr<Models>& model, std::shared_ptr<Shaders>& shader,
 	:Sprite2D(model, shader, texture)
 {
 	m_active = false;
-	m_MaxCooldown = 0.3;
+	m_MaxCooldown = 0.5;
 	m_Cooldown = 0.0;
-	m_speed = 250;
+	m_speed = 100;
 	m_MaxSpeed = 500;
-	m_Heal = 5;
+	m_Heal = 1;
 	m_Damage = 10;
 	m_Explosive = false;
 	m_SizeCollider = 20;
@@ -28,7 +28,7 @@ void Enermy::Update(float deltaTime)
 
 	if (m_Heal <= 0 || m_Explosive)
 	{
-		SoundManager::GetInstance()->PlaySound("explosive");
+		SoundManager::GetInstance()->PlaySound("enamidie");
 		m_Explosive = true;
 		GSPlay::m_score ++;
 		return;

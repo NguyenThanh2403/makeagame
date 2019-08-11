@@ -1,7 +1,6 @@
 #include <sstream>
 #include <iomanip>
 #include <thread>
-
 #include "GSPlay.h"
 #include "Shaders.h"
 #include "Texture.h"
@@ -43,15 +42,38 @@ void GSPlay::Init()
 	m_Player = std::make_shared<Player >(model, shader, texture);
 	m_Player->Set2DPosition(Application::screenWidth / 2, Application::screenHeight - 100);
 	m_Player->MoveToPossition(Vector2(Application::screenWidth / 2, Application::screenHeight - 100));
-	m_Player->SetSize(50, 50);
+	m_Player->SetSize(75, 75);
 
 	//text game title
 	shader = ResourceManagers::GetInstance()->GetShader("TextShader");
-	std::shared_ptr<Font> font = ResourceManagers::GetInstance()->GetFont("arialbd");
+	std::shared_ptr<Font> font = ResourceManagers::GetInstance()->GetFont("phong");
 	m_scoreText = std::make_shared< Text>(shader, font, "SCORE: ", TEXT_COLOR::BLACK, 1.0);
-	m_scoreText->Set2DPosition(Vector2(5, 25));
+	m_scoreText->Set2DPosition(Vector2(4, 25));
 	m_playerHealText = std::make_shared< Text>(shader, font, "HEAL: ", TEXT_COLOR::RED, 1.0);
 	m_playerHealText->Set2DPosition(Vector2(5, 50));
+	//button
+
+	//resume button
+	texture = ResourceManagers::GetInstance()->GetTexture("Repit");
+	std::shared_ptr<GameButton> button = std::make_shared<GameButton>(model, shader, texture);
+	button->Set2DPosition(Vector2(4, 50));
+	button->SetSize(50, 50);
+	button->SetOnClick([]() {
+		GameStateMachine::GetInstance()->ChangeState(StateTypes::STATE_Menu);
+		});
+	m_listButton.push_back(button);
+
+
+	/*/repit button
+	texture = ResourceManagers::GetInstance()->GetTexture("Back");
+	button = std::make_shared<GameButton>(model, shader, texture);
+	button->Set2DPosition(Vector2(5, 50));
+	button->SetSize(50, 50);
+	button->SetOnClick([]() {
+		GameStateMachine::GetInstance()->ChangeState(StateTypes::STATE_Play);
+		});
+	m_listButton.push_back(button);*/
+
 
 	//init effect
 	model = ResourceManagers::GetInstance()->GetModel("Sprite2D");
@@ -116,6 +138,11 @@ void GSPlay::HandleMouseEvents(int x, int y)
 void GSPlay::HandleTouchEvents(int x, int y, bool bIsPressed)
 {
 	m_Player->MoveToPossition(Vector2(x, y));
+	for (auto it : m_listButton)
+	{
+		(it)->HandleTouchEvents(x, y, bIsPressed);
+		if ((it)->IsHandle()) break;
+	}
 }
 
 void GSPlay::Update(float deltaTime)
@@ -186,6 +213,12 @@ void GSPlay::Update(float deltaTime)
 	stream2 << std::fixed << std::setprecision(0) << m_Player->GetHeal();
 	std::string heal = "HEAL: " + stream2.str();
 	m_playerHealText->setText(heal);
+	//button
+	m_BackGround->Update(deltaTime);
+	for (auto it : m_listButton)
+	{
+		it->Update(deltaTime);
+	}
 }
 
 void GSPlay::Draw()
@@ -215,6 +248,13 @@ void GSPlay::Draw()
 	//UI
 	m_scoreText->Draw();
 	m_playerHealText->Draw();
+	//butoon
+	
+	for (auto it : m_listButton)
+	{
+		it->Draw();
+	}
+	
 }
 
 void GSPlay::CreateRandomEnermy()
@@ -238,11 +278,11 @@ void GSPlay::CreateRandomEnermy()
 	}
 	auto model = ResourceManagers::GetInstance()->GetModel("Sprite2D");
 	auto shader = ResourceManagers::GetInstance()->GetShader("TextureShader");
-	auto texture = ResourceManagers::GetInstance()->GetTexture("Player");
+	auto texture = ResourceManagers::GetInstance()->GetTexture("enami");
 
 	std::shared_ptr<Enermy> enermy = std::make_shared<Enermy>(model, shader, texture);
 	enermy->Set2DPosition(pos);
-	enermy->SetSize(40, 40);
+	enermy->SetSize(50, 50);
 	enermy->SetRotation(180);
 	m_listEnermy.push_back(enermy);
 }

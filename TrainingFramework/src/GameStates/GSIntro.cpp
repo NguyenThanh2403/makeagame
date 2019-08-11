@@ -31,6 +31,11 @@ void GSIntro::Init()
 	m_logo->SetSize(200, 200);
 	SoundManager::GetInstance()->AddSound("yasuo_dance");
 	SoundManager::GetInstance()->PlaySound("yasuo_dance");
+	//title
+	shader = ResourceManagers::GetInstance()->GetShader("TextShader");
+	std::shared_ptr<Font> font = ResourceManagers::GetInstance()->GetFont("phong");
+	m_Text_gameName = std::make_shared< Text>(shader, font, "HASAGI", TEXT_COLOR::RED, 1.5);
+	m_Text_gameName->Set2DPosition(Vector2(Application::screenWidth / 2 - 80, 50));
 }
 
 void GSIntro::Exit()
@@ -62,7 +67,7 @@ void GSIntro::HandleKeyEvents(int key, bool bIsPressed)
 
 void GSIntro::HandleTouchEvents(int x, int y, bool bIsPressed)
 {
-
+	GameStateMachine::GetInstance()->ChangeState(StateTypes::STATE_Menu);
 }
 
 void GSIntro::HandleMouseEvents(int x, int y)
@@ -72,7 +77,7 @@ void GSIntro::HandleMouseEvents(int x, int y)
 void GSIntro::Update(float deltaTime)
 {
 	m_time += deltaTime;
-	if (m_time > 1.3)
+	if (m_time > 8)
 	{
 		GameStateMachine::GetInstance()->ChangeState(StateTypes::STATE_Menu);
 		m_time = 0;
@@ -83,5 +88,6 @@ void GSIntro::Draw()
 {
 	m_BackGround->Draw();
 	m_logo->Draw();
+	m_Text_gameName->Draw();
 	
 }

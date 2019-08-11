@@ -25,5 +25,6 @@ private:
 	std::shared_ptr<Sprite2D> m_logo;
 	float m_time;
 	std::shared_ptr<Sprite2D> m_BackGround;
+	std::shared_ptr<Text>  m_Text_gameName;
 };
 
