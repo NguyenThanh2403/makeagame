@@ -52,7 +52,7 @@ void GSMenu::Init()
 	button->Set2DPosition(Application::screenWidth / 2, 300);
 	button->SetSize(200, 50);
 	button->SetOnClick([]() {
-		exit(0);
+		GameStateMachine::GetInstance()->ChangeState(StateTypes::STATE_Intro);
 		});
 	m_listButton.push_back(button);
 	//exit button

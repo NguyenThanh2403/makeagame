@@ -92,6 +92,12 @@ void GSPlay::Init()
 	exp->SetSize(100, 100);
 	exp->SetActive(false);
 	m_listExplosiveEffect.push_back(exp);
+	
+	texture = ResourceManagers::GetInstance()->GetTexture("NV");
+	exp = std::make_shared<ExplosiveEffect>(model, shader, texture, Vector2(588, 1627), Vector2(98, 140), 0, 12, 0.7);
+	exp->SetSize(100, 100);
+	exp->SetActive(false);
+	m_listexp.push_back(exp);
 	//init sound
 	SoundManager::GetInstance()->AddSound("explosive");
 	SoundManager::GetInstance()->AddSound("explosive_2");
@@ -132,6 +138,15 @@ void GSPlay::HandleKeyEvents(int key, bool bIsPressed)
 			m_Player->Shoot(m_listBullet);
 		break;
 	case 81:
+		Checkexp(m_Player->Get2DPosition());
+		for (auto exp : m_listexp)
+		{
+			if (exp->IsActive())
+			{
+				exp->Draw();
+			}
+			//exp->SetActive(false);
+		}
 		m_Player->Chem(m_Player->Get2DPosition());
 		break;
 	case 82:
@@ -301,6 +316,13 @@ void GSPlay::Draw()
 			exp->Draw();
 		}
 	}
+	for (auto exp : m_listexp)
+	{
+		if (exp->IsActive())
+		{
+			exp->Draw();
+		}
+	}
 
 	//UI
 	m_scoreText->Draw();
@@ -396,4 +418,22 @@ void GSPlay::SpawnExplosive(Vector2 pos)
 	exp->SetSize(100, 100);
 	exp->Set2DPosition(pos);
 	m_listExplosiveEffect.push_back(exp);
+	texture = ResourceManagers::GetInstance()->GetTexture("explosive");
+	 exp = std::make_shared<ExplosiveEffect>(model, shader, texture, Vector2(1070, 422), Vector2(267.5, 211), 0, 7, 0.7);
+	exp->SetSize(100, 100);
+	exp->Set2DPosition(pos);
+	m_listExplosiveEffect.push_back(exp);
+}
+
+void GSPlay::Checkexp(Vector2 pos)
+{
+	for (auto exp : m_listexp)
+	{
+		if (!exp->IsActive())
+		{
+			exp->SetActive(true);
+			exp->Set2DPosition(pos);
+			return;
+		}
+	}
 }

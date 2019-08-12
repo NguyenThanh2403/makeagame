@@ -114,7 +114,7 @@ void Player::Shoot(std::vector<std::shared_ptr<Bullet>>& listBullet)
 void Player::Chem(Vector2 pos) {
 	SoundManager::GetInstance()->PlaySound("attack");
 	auto model = ResourceManagers::GetInstance()->GetModel("Sprite2D");
-	auto texture = ResourceManagers::GetInstance()->GetTexture("Bom");
+	auto texture = ResourceManagers::GetInstance()->GetTexture("NV");
 	auto shader = ResourceManagers::GetInstance()->GetShader("SpriteShader");
 	std::shared_ptr<ExplosiveEffect> exp = std::make_shared<ExplosiveEffect>(model, shader, texture, Vector2(1070, 422), Vector2(267.5, 211), 0, 7, 0.7);
 	exp->SetSize(100, 100);
