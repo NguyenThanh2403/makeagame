@@ -6,12 +6,12 @@ Player::Player(std::shared_ptr<Models>& model, std::shared_ptr<Shaders>& shader,
 	:Sprite2D(model, shader, texture)
 {
 	m_TargetPosition = Vector2(0, 0);
-	m_MaxCooldown = 0.3;
+	m_MaxCooldown = 0.1;
 	m_Cooldown = 0.0;
-	m_speed = 250;
+	m_speed = 300;
 	m_MaxSpeed = 500;
 	m_Heal = 100;
-	m_SizeCollider = 15;
+	m_SizeCollider = 20;
 	m_isAlive = true;
 }
 

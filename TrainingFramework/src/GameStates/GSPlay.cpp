@@ -127,12 +127,33 @@ void GSPlay::HandleEvents()
 void GSPlay::HandleKeyEvents(int key, bool bIsPressed)
 {
 	switch (key) {
-	case 66:
+	case 87:
 		if (m_Player->CanShoot())
 			m_Player->Shoot(m_listBullet);
 		break;
-	case 65:
+	case 81:
 		m_Player->Chem(m_Player->Get2DPosition());
+		break;
+	case 82:
+		
+		for (auto enermy : m_listEnermy)
+		{
+		if (enermy->IsActive())
+		{
+			enermy->SetActive(false);
+				SpawnExplosive(enermy->Get2DPosition());
+				continue;
+			
+			enermy->CheckCollider(m_listBullet);
+		}
+		}
+		std::stringstream stream;
+		stream << std::fixed << std::setprecision(0) << m_score;
+		std::string score = "KILL: " + stream.str();
+		m_scoreText->setText(score);
+		SoundManager::GetInstance()->AddSound("until");
+		SoundManager::GetInstance()->PlaySound("until");
+		break;
 	}
 	
 	
@@ -178,8 +199,11 @@ void GSPlay::Update(float deltaTime)
 			//m_Player->Shoot(m_listBullet);
 
 		m_Player->CheckCollider(m_listBullet, m_listEnermy);
-	}else
+	}
+	else {
 		GameStateMachine::GetInstance()->ChangeState(StateTypes::STATE_Menu);
+		GSPlay::Pause();
+	}
 
 	//update enermies
 	for (auto enermy : m_listEnermy)
@@ -208,7 +232,7 @@ void GSPlay::Update(float deltaTime)
 		{
 			if (samurai->IsExplosive())
 			{
-				samurai->SetActive(false);
+				samurai->SetActive(true);
 				SpawnExplosive(samurai->Get2DPosition());
 				continue;
 			}

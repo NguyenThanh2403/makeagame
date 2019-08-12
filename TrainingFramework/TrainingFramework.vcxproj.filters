@@ -90,6 +90,9 @@
     <ClCompile Include="Samurai.cpp">
       <Filter>src\GameObject</Filter>
     </ClCompile>
+    <ClCompile Include="Credit.cpp">
+      <Filter>src\GameStates</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Application.h">
@@ -175,6 +178,9 @@
     </ClInclude>
     <ClInclude Include="Samurai.h">
       <Filter>src\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Credit.h">
+      <Filter>src\GameStates</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -1,19 +1,13 @@
 ﻿  cl : Command line warning D9035 : option 'Gm' has been deprecated and will be removed in a future release
-  GSPlay.cpp
+  Credit.cpp
 C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\Helper\ThreadPool.h(37,13): warning C4477:  'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'std::thread::id'
 C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\Soloud\include\soloud.h(37,1): warning C4005:  'WIN32_LEAN_AND_MEAN': macro redefinition
 C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\Include\AMD\EGL\eglplatform.h(67): message :  see previous definition of 'WIN32_LEAN_AND_MEAN'
-C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameStates\GSPlay.cpp(43,86): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameStates\GSPlay.cpp(43,55): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameStates\GSPlay.cpp(50,82): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameStates\GSPlay.cpp(50,51): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameStates\GSPlay.cpp(51,92): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameStates\GSPlay.cpp(51,61): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameStates\GSPlay.cpp(151,39): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameStates\GSPlay.cpp(151,36): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameStates\GSPlay.cpp(169,24): warning C4305:  '=': truncation from 'double' to 'float'
-C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameStates\GSPlay.cpp(300,10): warning C4244:  '=': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameStates\GSPlay.cpp(332,10): warning C4244:  '=': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\Credit.cpp(23,86): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\Credit.cpp(23,55): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\Credit.cpp(63,80): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\Credit.cpp(63,49): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\Credit.cpp(74,70): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1555,71): warning C4244:  'argument': conversion from '_Ty' to 'float', possible loss of data
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1555,71): warning C4244:         with
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1555,71): warning C4244:         [
@@ -29,5 +23,5 @@ C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.2
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :         [
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :             _Ty=Text
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :         ]
-C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameStates\GSPlay.cpp(79): message :  see reference to function template instantiation 'std::shared_ptr<Text> std::make_shared<Text,std::shared_ptr<Shaders>&,std::shared_ptr<Font>&,const char(&)[7],TEXT_COLOR,double>(std::shared_ptr<Shaders> &,std::shared_ptr<Font> &,const char (&)[7],TEXT_COLOR &&,double &&)' being compiled
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\Credit.cpp(73): message :  see reference to function template instantiation 'std::shared_ptr<Text> std::make_shared<Text,std::shared_ptr<Shaders>&,std::shared_ptr<Font>&,const char(&)[7],TEXT_COLOR,double>(std::shared_ptr<Shaders> &,std::shared_ptr<Font> &,const char (&)[7],TEXT_COLOR &&,double &&)' being compiled
   TrainingFramework.vcxproj -> C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\\BIN-AMD\TrainingFramework.exe

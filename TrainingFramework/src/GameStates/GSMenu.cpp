@@ -41,7 +41,7 @@ void GSMenu::Init()
 	button->Set2DPosition(Application::screenWidth / 2, 200);
 	button->SetSize(200, 50);
 	button->SetOnClick([]() {
-		exit(0);
+		GameStateMachine::GetInstance()->ChangeState(StateTypes::STATE_Credit);
 		});
 	m_listButton.push_back(button);
 
@@ -65,13 +65,13 @@ void GSMenu::Init()
 		});
 	m_listButton.push_back(button);
 
-
 	//text game title
 	shader = ResourceManagers::GetInstance()->GetShader("TextShader");
 	std::shared_ptr<Font> font = ResourceManagers::GetInstance()->GetFont("phong");
 	m_Text_gameName = std::make_shared< Text>(shader, font, "  HASAGI", TEXT_COLOR::RED, 1.5);
 	m_Text_gameName->Set2DPosition(Vector2(Application::screenWidth / 2 - 80, 50));
 }
+
 
 void GSMenu::Exit()
 {

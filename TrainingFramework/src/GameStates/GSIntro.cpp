@@ -1,6 +1,4 @@
 #include "GSIntro.h"
-
-
 GSIntro::GSIntro()
 {
 	m_time = 0;
@@ -67,6 +65,7 @@ void GSIntro::HandleKeyEvents(int key, bool bIsPressed)
 
 void GSIntro::HandleTouchEvents(int x, int y, bool bIsPressed)
 {
+	if (bIsPressed)
 	GameStateMachine::GetInstance()->ChangeState(StateTypes::STATE_Menu);
 }
 
