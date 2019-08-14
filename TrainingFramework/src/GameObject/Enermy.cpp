@@ -6,7 +6,7 @@ Enermy::Enermy(std::shared_ptr<Models>& model, std::shared_ptr<Shaders>& shader,
 	:Sprite2D(model, shader, texture)
 {
 	m_active = false;
-	m_MaxCooldown = 2;
+	m_MaxCooldown = 3;
 	m_Cooldown = 0.0;
 	m_speed = 100;
 	m_MaxSpeed = 500;
@@ -43,7 +43,7 @@ void Enermy::Update(float deltaTime)
 	pos.x = pos.x + m_speed * deltaTime;
 	Set2DPosition(pos);
 
-	if (pos.x > Application::screenWidth)
+	if (pos.x > Application::screenWidth-100)
 		m_active = false;
 }
 
@@ -61,7 +61,7 @@ void Enermy::Shoot(std::vector<std::shared_ptr<Bullet>>& listBullet)
 		{
 			bullet->SetActive(true);
 			bullet->Set2DPosition(Get2DPosition());
-			bullet->SetSpeed(-500);
+			bullet->SetSpeed(-300);
 			bullet->SetType(BULLET_TYPE::Enermy);
 			return;
 		}
@@ -74,7 +74,7 @@ void Enermy::Shoot(std::vector<std::shared_ptr<Bullet>>& listBullet)
 	std::shared_ptr<Bullet> bullet = std::make_shared<Bullet>(model, shader, texture);
 	bullet->SetSize(20, 20);
 	bullet->Set2DPosition(Get2DPosition());
-	bullet->SetSpeed(-500);
+	bullet->SetSpeed(-300);
 	bullet->SetType(BULLET_TYPE::Enermy);
 	listBullet.push_back(bullet);
 }

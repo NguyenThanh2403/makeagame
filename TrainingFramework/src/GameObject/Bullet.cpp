@@ -4,7 +4,7 @@
 Bullet::Bullet(std::shared_ptr<Models>& model, std::shared_ptr<Shaders>& shader, std::shared_ptr<Texture>& texture)
 	:Sprite2D(model, shader, texture)
 {
-	m_speed = 500.0;
+	m_speed = 300.0;
 	m_active = true;
 	m_type = BULLET_TYPE::None;
 	m_SizeCollider = 10;

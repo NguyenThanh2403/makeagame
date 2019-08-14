@@ -1,0 +1,212 @@
+﻿  Credit.cpp
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\Helper\ThreadPool.h(37,13): warning C4477:  'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'std::thread::id'
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\Soloud\include\soloud.h(37,1): warning C4005:  'WIN32_LEAN_AND_MEAN': macro redefinition
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\Include\AMD\EGL\eglplatform.h(67): message :  see previous definition of 'WIN32_LEAN_AND_MEAN'
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\Credit.cpp(23,86): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\Credit.cpp(23,55): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\Credit.cpp(63,80): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\Credit.cpp(63,49): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\Credit.cpp(74,70): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1555,71): warning C4244:  'argument': conversion from '_Ty' to 'float', possible loss of data
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1555,71): warning C4244:         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1555,71): warning C4244:         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1555,71): warning C4244:             _Ty=double
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1555,71): warning C4244:         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :  see reference to function template instantiation 'std::_Ref_count_obj<_Ty>::_Ref_count_obj<std::shared_ptr<Shaders>&,std::shared_ptr<Font>&,const char(&)[7],TEXT_COLOR,double>(std::shared_ptr<Shaders> &,std::shared_ptr<Font> &,const char (&)[7],TEXT_COLOR &&,double &&)' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :             _Ty=Text
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :  see reference to function template instantiation 'std::_Ref_count_obj<_Ty>::_Ref_count_obj<std::shared_ptr<Shaders>&,std::shared_ptr<Font>&,const char(&)[7],TEXT_COLOR,double>(std::shared_ptr<Shaders> &,std::shared_ptr<Font> &,const char (&)[7],TEXT_COLOR &&,double &&)' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :             _Ty=Text
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :         ]
+  Samurai.cpp
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\Credit.cpp(73): message :  see reference to function template instantiation 'std::shared_ptr<Text> std::make_shared<Text,std::shared_ptr<Shaders>&,std::shared_ptr<Font>&,const char(&)[7],TEXT_COLOR,double>(std::shared_ptr<Shaders> &,std::shared_ptr<Font> &,const char (&)[7],TEXT_COLOR &&,double &&)' being compiled
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\Helper\ThreadPool.h(37,13): warning C4477:  'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'std::thread::id'
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\Soloud\include\soloud.h(37,1): warning C4005:  'WIN32_LEAN_AND_MEAN': macro redefinition
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\Include\AMD\EGL\eglplatform.h(67): message :  see previous definition of 'WIN32_LEAN_AND_MEAN'
+  Application.cpp
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\Samurai.cpp(62,34): warning C4244:  '-=': conversion from 'float' to 'int', possible loss of data
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\Helper\ThreadPool.h(37,13): warning C4477:  'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'std::thread::id'
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\Soloud\include\soloud.h(37,1): warning C4005:  'WIN32_LEAN_AND_MEAN': macro redefinition
+  ResourceManagers.cpp
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\Include\AMD\EGL\eglplatform.h(67): message :  see previous definition of 'WIN32_LEAN_AND_MEAN'
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\Helper\ThreadPool.h(37,13): warning C4477:  'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'std::thread::id'
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\Soloud\include\soloud.h(37,1): warning C4005:  'WIN32_LEAN_AND_MEAN': macro redefinition
+  SoundManager.cpp
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\Include\AMD\EGL\eglplatform.h(67): message :  see previous definition of 'WIN32_LEAN_AND_MEAN'
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\Helper\ThreadPool.h(37,13): warning C4477:  'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'std::thread::id'
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\Soloud\include\soloud.h(37,1): warning C4005:  'WIN32_LEAN_AND_MEAN': macro redefinition
+  Bullet.cpp
+  Enermy.cpp
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\Include\AMD\EGL\eglplatform.h(67): message :  see previous definition of 'WIN32_LEAN_AND_MEAN'
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\Helper\ThreadPool.h(37,13): warning C4477:  'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'std::thread::id'
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\Soloud\include\soloud.h(37,1): warning C4005:  'WIN32_LEAN_AND_MEAN': macro redefinition
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\Include\AMD\EGL\eglplatform.h(67): message :  see previous definition of 'WIN32_LEAN_AND_MEAN'
+  ExplosiveEffect.cpp
+  Font.cpp
+  GameButton.cpp
+  Player.cpp
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameObject\Enermy.cpp(99,34): warning C4244:  '-=': conversion from 'float' to 'int', possible loss of data
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\Helper\ThreadPool.h(37,13): warning C4477:  'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'std::thread::id'
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\Soloud\include\soloud.h(37,1): warning C4005:  'WIN32_LEAN_AND_MEAN': macro redefinition
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\Include\AMD\EGL\eglplatform.h(67): message :  see previous definition of 'WIN32_LEAN_AND_MEAN'
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameObject\Player.cpp(9,21): warning C4305:  '=': truncation from 'double' to 'float'
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameObject\Player.cpp(146,34): warning C4244:  '-=': conversion from 'float' to 'int', possible loss of data
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameObject\Player.cpp(163,34): warning C4244:  '-=': conversion from 'float' to 'int', possible loss of data
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1555,71): warning C4244:  'argument': conversion from '_Ty' to 'float', possible loss of data
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1555,71): warning C4244:         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1555,71): warning C4244:         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1555,71): warning C4244:             _Ty=double
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1555,71): warning C4244:         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :  see reference to function template instantiation 'std::_Ref_count_obj<_Ty>::_Ref_count_obj<std::shared_ptr<Models>&,std::shared_ptr<Shaders>&,std::shared_ptr<Texture>&,Vector2,Vector2,int,int,double>(std::shared_ptr<Models> &,std::shared_ptr<Shaders> &,std::shared_ptr<Texture> &,Vector2 &&,Vector2 &&,int &&,int &&,double &&)' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :             _Ty=ExplosiveEffect
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :  see reference to function template instantiation 'std::_Ref_count_obj<_Ty>::_Ref_count_obj<std::shared_ptr<Models>&,std::shared_ptr<Shaders>&,std::shared_ptr<Texture>&,Vector2,Vector2,int,int,double>(std::shared_ptr<Models> &,std::shared_ptr<Shaders> &,std::shared_ptr<Texture> &,Vector2 &&,Vector2 &&,int &&,int &&,double &&)' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :             _Ty=ExplosiveEffect
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :         ]
+  Sprite2D.cpp
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameObject\Player.cpp(119): message :  see reference to function template instantiation 'std::shared_ptr<ExplosiveEffect> std::make_shared<ExplosiveEffect,std::shared_ptr<Models>&,std::shared_ptr<Shaders>&,std::shared_ptr<Texture>&,Vector2,Vector2,int,int,double>(std::shared_ptr<Models> &,std::shared_ptr<Shaders> &,std::shared_ptr<Texture> &,Vector2 &&,Vector2 &&,int &&,int &&,double &&)' being compiled
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameObject\Sprite2D.cpp(146,11): warning C4244:  'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameObject\Sprite2D.cpp(147,11): warning C4244:  'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameObject\Sprite2D.cpp(157,11): warning C4244:  'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameObject\Sprite2D.cpp(158,11): warning C4244:  'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameObject\Sprite2D.cpp(172,15): warning C4244:  '=': conversion from 'GLint' to 'GLfloat', possible loss of data
+  Camera.cpp
+  Sprite3D.cpp
+  Models.cpp
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameObject\Sprite2D.cpp(173,15): warning C4244:  '=': conversion from 'GLint' to 'GLfloat', possible loss of data
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameObject\Models.cpp(25,18): warning C4244:  'initializing': conversion from 'std::streamoff' to 'size_t', possible loss of data
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameObject\Models.cpp(35,1): warning C4996:  'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\stdio.h(2263): message :  see declaration of 'sscanf'
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameObject\Models.cpp(40,1): warning C4996:  'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\stdio.h(2263): message :  see declaration of 'sscanf'
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameObject\Models.cpp(62,1): warning C4996:  'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\stdio.h(2263): message :  see declaration of 'sscanf'
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameObject\Models.cpp(68,1): warning C4996:  'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Shaders.cpp
+  SpriteSheet.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\stdio.h(2263): message :  see declaration of 'sscanf'
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameObject\SpriteSheet.cpp(41,33): warning C4244:  '=': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameObject\SpriteSheet.cpp(42,33): warning C4244:  '=': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameObject\SpriteSheet.cpp(118,24): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameObject\SpriteSheet.cpp(118,16): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameObject\SpriteSheet.cpp(173,11): warning C4244:  'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameObject\SpriteSheet.cpp(174,11): warning C4244:  'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameObject\SpriteSheet.cpp(184,11): warning C4244:  'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameObject\SpriteSheet.cpp(185,11): warning C4244:  'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameObject\SpriteSheet.cpp(199,15): warning C4244:  '=': conversion from 'GLint' to 'GLfloat', possible loss of data
+  Text.cpp
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameObject\SpriteSheet.cpp(200,15): warning C4244:  '=': conversion from 'GLint' to 'GLfloat', possible loss of data
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameObject\Text.cpp(22,11): warning C4244:  'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameObject\Text.cpp(23,11): warning C4244:  'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameObject\Text.cpp(169,11): warning C4244:  'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameObject\Text.cpp(170,11): warning C4244:  'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameObject\Text.cpp(180,11): warning C4244:  'initializing': conversion from 'double' to 'float', possible loss of data
+  Texture.cpp
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameObject\Text.cpp(181,11): warning C4244:  'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameObject\Texture.cpp(26,29): warning C4244:  'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
+  GameStatebase.cpp
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameObject\Texture.cpp(26,26): warning C4244:  'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\Helper\ThreadPool.h(37,13): warning C4477:  'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'std::thread::id'
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\Soloud\include\soloud.h(37,1): warning C4005:  'WIN32_LEAN_AND_MEAN': macro redefinition
+  Compiling...
+  GameStateMachine.cpp
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\Include\AMD\EGL\eglplatform.h(67): message :  see previous definition of 'WIN32_LEAN_AND_MEAN'
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\Helper\ThreadPool.h(37,13): warning C4477:  'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'std::thread::id'
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\Soloud\include\soloud.h(37,1): warning C4005:  'WIN32_LEAN_AND_MEAN': macro redefinition
+  GSIntro.cpp
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\Include\AMD\EGL\eglplatform.h(67): message :  see previous definition of 'WIN32_LEAN_AND_MEAN'
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\Helper\ThreadPool.h(37,13): warning C4477:  'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'std::thread::id'
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\Soloud\include\soloud.h(37,1): warning C4005:  'WIN32_LEAN_AND_MEAN': macro redefinition
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\Include\AMD\EGL\eglplatform.h(67): message :  see previous definition of 'WIN32_LEAN_AND_MEAN'
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameStates\GSIntro.cpp(21,86): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameStates\GSIntro.cpp(21,55): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameStates\GSIntro.cpp(47,70): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1555,71): warning C4244:  'argument': conversion from '_Ty' to 'float', possible loss of data
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1555,71): warning C4244:         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1555,71): warning C4244:         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1555,71): warning C4244:             _Ty=double
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1555,71): warning C4244:         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :  see reference to function template instantiation 'std::_Ref_count_obj<_Ty>::_Ref_count_obj<std::shared_ptr<Shaders>&,std::shared_ptr<Font>&,const char(&)[7],TEXT_COLOR,double>(std::shared_ptr<Shaders> &,std::shared_ptr<Font> &,const char (&)[7],TEXT_COLOR &&,double &&)' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :             _Ty=Text
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :  see reference to function template instantiation 'std::_Ref_count_obj<_Ty>::_Ref_count_obj<std::shared_ptr<Shaders>&,std::shared_ptr<Font>&,const char(&)[7],TEXT_COLOR,double>(std::shared_ptr<Shaders> &,std::shared_ptr<Font> &,const char (&)[7],TEXT_COLOR &&,double &&)' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :             _Ty=Text
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :         ]
+  GSMenu.cpp
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameStates\GSIntro.cpp(46): message :  see reference to function template instantiation 'std::shared_ptr<Text> std::make_shared<Text,std::shared_ptr<Shaders>&,std::shared_ptr<Font>&,const char(&)[7],TEXT_COLOR,double>(std::shared_ptr<Shaders> &,std::shared_ptr<Font> &,const char (&)[7],TEXT_COLOR &&,double &&)' being compiled
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\Helper\ThreadPool.h(37,13): warning C4477:  'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'std::thread::id'
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\Soloud\include\soloud.h(37,1): warning C4005:  'WIN32_LEAN_AND_MEAN': macro redefinition
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\Include\AMD\EGL\eglplatform.h(67): message :  see previous definition of 'WIN32_LEAN_AND_MEAN'
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameStates\GSMenu.cpp(23,86): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameStates\GSMenu.cpp(23,55): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameStates\GSMenu.cpp(30,49): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameStates\GSMenu.cpp(41,49): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameStates\GSMenu.cpp(52,49): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameStates\GSMenu.cpp(61,49): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameStates\GSMenu.cpp(72,70): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1555,71): warning C4244:  'argument': conversion from '_Ty' to 'float', possible loss of data
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1555,71): warning C4244:         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1555,71): warning C4244:         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1555,71): warning C4244:             _Ty=double
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1555,71): warning C4244:         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :  see reference to function template instantiation 'std::_Ref_count_obj<_Ty>::_Ref_count_obj<std::shared_ptr<Shaders>&,std::shared_ptr<Font>&,const char(&)[9],TEXT_COLOR,double>(std::shared_ptr<Shaders> &,std::shared_ptr<Font> &,const char (&)[9],TEXT_COLOR &&,double &&)' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :             _Ty=Text
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :  see reference to function template instantiation 'std::_Ref_count_obj<_Ty>::_Ref_count_obj<std::shared_ptr<Shaders>&,std::shared_ptr<Font>&,const char(&)[9],TEXT_COLOR,double>(std::shared_ptr<Shaders> &,std::shared_ptr<Font> &,const char (&)[9],TEXT_COLOR &&,double &&)' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :             _Ty=Text
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :         ]
+  GSPlay.cpp
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameStates\GSMenu.cpp(71): message :  see reference to function template instantiation 'std::shared_ptr<Text> std::make_shared<Text,std::shared_ptr<Shaders>&,std::shared_ptr<Font>&,const char(&)[9],TEXT_COLOR,double>(std::shared_ptr<Shaders> &,std::shared_ptr<Font> &,const char (&)[9],TEXT_COLOR &&,double &&)' being compiled
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\Helper\ThreadPool.h(37,13): warning C4477:  'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'std::thread::id'
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\Soloud\include\soloud.h(37,1): warning C4005:  'WIN32_LEAN_AND_MEAN': macro redefinition
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\Include\AMD\EGL\eglplatform.h(67): message :  see previous definition of 'WIN32_LEAN_AND_MEAN'
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameStates\GSPlay.cpp(43,86): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameStates\GSPlay.cpp(43,55): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameStates\GSPlay.cpp(50,82): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameStates\GSPlay.cpp(50,51): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameStates\GSPlay.cpp(51,92): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameStates\GSPlay.cpp(51,61): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameStates\GSPlay.cpp(187,39): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameStates\GSPlay.cpp(187,36): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameStates\GSPlay.cpp(205,24): warning C4305:  '=': truncation from 'double' to 'float'
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameStates\GSPlay.cpp(354,9): warning C4244:  '=': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameStates\GSPlay.cpp(386,10): warning C4244:  '=': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1555,71): warning C4244:  'argument': conversion from '_Ty' to 'float', possible loss of data
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1555,71): warning C4244:         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1555,71): warning C4244:         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1555,71): warning C4244:             _Ty=double
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1555,71): warning C4244:         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :  see reference to function template instantiation 'std::_Ref_count_obj<_Ty>::_Ref_count_obj<std::shared_ptr<Shaders>&,std::shared_ptr<Font>&,const char(&)[7],TEXT_COLOR,double>(std::shared_ptr<Shaders> &,std::shared_ptr<Font> &,const char (&)[7],TEXT_COLOR &&,double &&)' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :             _Ty=Text
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :  see reference to function template instantiation 'std::_Ref_count_obj<_Ty>::_Ref_count_obj<std::shared_ptr<Shaders>&,std::shared_ptr<Font>&,const char(&)[7],TEXT_COLOR,double>(std::shared_ptr<Shaders> &,std::shared_ptr<Font> &,const char (&)[7],TEXT_COLOR &&,double &&)' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :             _Ty=Text
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :         ]
+  TrainingFramework.cpp
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameStates\GSPlay.cpp(79): message :  see reference to function template instantiation 'std::shared_ptr<Text> std::make_shared<Text,std::shared_ptr<Shaders>&,std::shared_ptr<Font>&,const char(&)[7],TEXT_COLOR,double>(std::shared_ptr<Shaders> &,std::shared_ptr<Font> &,const char (&)[7],TEXT_COLOR &&,double &&)' being compiled
+LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 1925 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  TrainingFramework.vcxproj -> C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\\BIN-ATI\TrainingFramework.exe

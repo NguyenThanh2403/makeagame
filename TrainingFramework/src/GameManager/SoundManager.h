@@ -18,7 +18,8 @@ public:
 
 private:
 	std::string m_SoundsPath;
+	std::shared_ptr<SoLoud::Soloud> m_Soloud; // Engine core
 	std::map<std::string,std::shared_ptr<SoLoud::Wav>> m_MapWave;
 
-	std::shared_ptr<SoLoud::Soloud> m_Soloud; // Engine core
+	
 };

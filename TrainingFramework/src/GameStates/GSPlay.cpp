@@ -42,7 +42,11 @@ void GSPlay::Init()
 	m_BackGround = std::make_shared<Sprite2D>(model, shader, texture);
 	m_BackGround->Set2DPosition(Application::screenWidth / 2, Application::screenHeight / 2);
 	m_BackGround->SetSize(Application::screenWidth, Application::screenHeight);
-
+	//ava
+	texture = ResourceManagers::GetInstance()->GetTexture("ava");
+	m_ava = std::make_shared<Sprite2D>(model, shader, texture);
+	m_ava->Set2DPosition(Vector2(30, 30));
+	m_ava->SetSize(50, 50);
 
 	//player
 	texture = ResourceManagers::GetInstance()->GetTexture("samurai");
@@ -72,14 +76,53 @@ void GSPlay::Init()
 		});
 	m_listButton.push_back(button);
 
+	//repit button
+	texture = ResourceManagers::GetInstance()->GetTexture("Button_q");
+	button = std::make_shared<GameButton>(model, shader, texture);
+	button->Set2DPosition(Vector2(925, 140));
+	button->SetSize(50, 50);
+	button->SetOnClick([]() {
+		//GameStateMachine::GetInstance()->ChangeState(StateTypes::STATE_Menu);
+		});
+	m_listButton.push_back(button);
+	//repit button
+	texture = ResourceManagers::GetInstance()->GetTexture("Button_w");
+	button = std::make_shared<GameButton>(model, shader, texture);
+	button->Set2DPosition(Vector2(925, 200));
+	button->SetSize(50, 50);
+	button->SetOnClick([]() {
+		//GameStateMachine::GetInstance()->ChangeState(StateTypes::STATE_Menu);
+		});
+	m_listButton.push_back(button);
+	//repit button
+	texture = ResourceManagers::GetInstance()->GetTexture("Button_e");
+	button = std::make_shared<GameButton>(model, shader, texture);
+	button->Set2DPosition(Vector2(925, 260));
+	button->SetSize(50, 50);
+	button->SetOnClick([]() {
+		//GameStateMachine::GetInstance()->ChangeState(StateTypes::STATE_Menu);
+		});
+	m_listButton.push_back(button);
+	//repit button
+	texture = ResourceManagers::GetInstance()->GetTexture("Button_r");
+	button = std::make_shared<GameButton>(model, shader, texture);
+	button->Set2DPosition(Vector2(925, 320));
+	button->SetSize(50, 50);
+	button->SetOnClick([]() {
+		//GameStateMachine::GetInstance()->ChangeState(StateTypes::STATE_Menu);
+		});
+	m_listButton.push_back(button);
+
 
 	//text game title
 	shader = ResourceManagers::GetInstance()->GetShader("TextShader");
 	std::shared_ptr<Font> font = ResourceManagers::GetInstance()->GetFont("phong");
 	m_scoreText = std::make_shared< Text>(shader, font, "KILL: ", TEXT_COLOR::BLACK, 1.0);
-	m_scoreText->Set2DPosition(Vector2(4, 25));
+	m_scoreText->Set2DPosition(Vector2(70, 25));
 	m_playerHealText = std::make_shared< Text>(shader, font, "HP" , TEXT_COLOR::RED, 1.0);
-	m_playerHealText->Set2DPosition(Vector2(5, 50));
+	m_playerHealText->Set2DPosition(Vector2(70, 50));
+	m_skillText = std::make_shared< Text>(shader, font, "SKILL", TEXT_COLOR::RED, 0.5);
+	m_skillText->Set2DPosition(Vector2(900, 100));
 
 
 
@@ -132,46 +175,63 @@ void GSPlay::HandleEvents()
 
 void GSPlay::HandleKeyEvents(int key, bool bIsPressed)
 {
-	switch (key) {
-	case 87:
-		if (m_Player->CanShoot())
-			m_Player->Shoot(m_listBullet);
-		break;
-	case 81:
-		Checkexp(m_Player->Get2DPosition());
-		for (auto exp : m_listexp)
-		{
-			if (exp->IsActive())
-			{
-				exp->Draw();
-			}
-			//exp->SetActive(false);
-		}
-		m_Player->Chem(m_Player->Get2DPosition());
-		break;
-	case 82:
+	if (bIsPressed) {
 		
-		for (auto enermy : m_listEnermy)
-		{
-		if (enermy->IsActive())
-		{
-			enermy->SetActive(false);
-				SpawnExplosive(enermy->Get2DPosition());
-				continue;
-			
-			enermy->CheckCollider(m_listBullet);
+		switch (key) {
+		case 87:
+			if (m_Player->CanShoot())
+				m_Player->Shoot(m_listBullet);
+			break;
+		case  69:
+			if (bIsPressed)
+			SoundManager::GetInstance()->AddSound("cuoi");
+			SoundManager::GetInstance()->PlaySound("cuoi");
+			if(m_Player->GetHeal()<50)
+			CreateRandomSamurai();
+			break;
+
+		case 81:
+			Checkexp(m_Player->Get2DPosition());
+			for (auto exp : m_listexp)
+			{
+				if (exp->IsActive())
+				{
+					exp->Draw();
+				}
+				//exp->SetActive(false);
+			}
+			m_Player->Chem(m_Player->Get2DPosition());
+			break;
+		case 82:
+			if (bIsPressed) {
+				if (Rskill > 0) {
+					for (auto enermy : m_listEnermy)
+					{
+						if (enermy->IsActive())
+						{
+							enermy->SetActive(false);
+							SpawnExplosive(enermy->Get2DPosition());
+							continue;
+
+							enermy->CheckCollider(m_listBullet);
+						}
+					}
+					std::stringstream stream;
+					stream << std::fixed << std::setprecision(0) << m_score;
+					std::string score = "KILL: " + stream.str();
+					m_scoreText->setText(score);
+					m_scoreText->Draw();
+					SoundManager::GetInstance()->AddSound("until");
+					SoundManager::GetInstance()->PlaySound("until");
+					Rskill = Rskill - 1;
+					GSPlay::Update(0.01);
+				}
+
+			}
+			break;
 		}
-		}
-		std::stringstream stream;
-		stream << std::fixed << std::setprecision(0) << m_score;
-		std::string score = "KILL: " + stream.str();
-		m_scoreText->setText(score);
-		SoundManager::GetInstance()->AddSound("until");
-		SoundManager::GetInstance()->PlaySound("until");
-		break;
+
 	}
-	
-	
 }
 
 
@@ -202,6 +262,7 @@ void GSPlay::Update(float deltaTime)
 	if (m_SpawnCooldown <= 0)
 	{
 		CreateRandomEnermy();
+		//CreateRandomSamurai();
 		m_SpawnCooldown = 0.3;
 	}
 
@@ -216,7 +277,7 @@ void GSPlay::Update(float deltaTime)
 		m_Player->CheckCollider(m_listBullet, m_listEnermy);
 	}
 	else {
-		GameStateMachine::GetInstance()->ChangeState(StateTypes::STATE_Menu);
+		GameStateMachine::GetInstance()->ChangeState(StateTypes::STATE_Gameover);
 		GSPlay::Pause();
 	}
 
@@ -265,6 +326,17 @@ void GSPlay::Update(float deltaTime)
 		}
 	}
 
+	for (auto exp : m_listexp)
+	{
+		if (exp->IsActive())
+		{
+			exp->Update(deltaTime);
+		}
+	}
+	//R
+	if (m_score != 0 && m_score % 20 == 0) Rskill++;
+	else Rskill = Rskill;
+
 	//update bullets
 	for (auto bullet : m_listBullet)
 	{
@@ -292,7 +364,7 @@ void GSPlay::Draw()
 {
 	//ground
 	m_BackGround->Draw();
-
+	m_ava->Draw();
 	for (auto enermy : m_listEnermy)
 		if (enermy->IsActive())
 			enermy->Draw();
@@ -327,6 +399,7 @@ void GSPlay::Draw()
 	//UI
 	m_scoreText->Draw();
 	m_playerHealText->Draw();
+	m_skillText->Draw();
 	//butoon
 	
 	for (auto it : m_listButton)
@@ -339,12 +412,12 @@ void GSPlay::Draw()
 void GSPlay::CreateRandomEnermy()
 {
 
-	int range = Application::screenHeight - 10 + 1;
-	int num = rand() % range + 10;
+	int range = Application::screenHeight - 150 + 1;
+	int num =80+ rand()%300;//rand() % range + 10;
 
 	Vector2 pos;
-	pos.y = num;
-	pos.x = 10;
+	pos.y =num;
+	pos.x = 20;
 
 	for (auto enermy : m_listEnermy)
 	{
@@ -372,10 +445,10 @@ void GSPlay::CreateRandomSamurai()
 
 	int range = Application::screenWidth - 10 + 1;
 	
-	int num = rand() % range + 10;
+	int num = rand() % 500 + 100;
 
 	Vector2 pos;
-	pos.x = num;
+	pos.x = m_Player->Get2DPosition().x;
 	pos.y = 10;
 
 	for (auto samurai : m_listSamurai)
@@ -393,7 +466,7 @@ void GSPlay::CreateRandomSamurai()
 
 	std::shared_ptr<Samurai> samurai = std::make_shared<Samurai>(model, shader, texture);
 	samurai->Set2DPosition(pos);
-	samurai->SetSize(30, 30);
+	samurai->SetSize(40, 40);
 	samurai->SetRotation(180);
 	m_listSamurai.push_back(samurai);
 }

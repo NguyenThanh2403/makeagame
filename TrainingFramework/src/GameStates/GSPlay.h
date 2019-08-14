@@ -31,10 +31,14 @@ public:
 	void Draw() override;
 	
 	static int m_score;
+	 int Rskill = 0;
+
 
 private:
 	std::shared_ptr<Sprite2D> m_BackGround;
+	std::shared_ptr<Sprite2D> m_ava;
 	std::shared_ptr<Text>  m_scoreText;
+	std::shared_ptr<Text>  m_skillText;
 	std::shared_ptr<Text>  m_playerHealText;
 	std::shared_ptr<Player> m_Player;
 	std::vector<std::shared_ptr<Bullet>> m_listBullet;

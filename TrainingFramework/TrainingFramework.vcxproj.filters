@@ -93,6 +93,12 @@
     <ClCompile Include="Credit.cpp">
       <Filter>src\GameStates</Filter>
     </ClCompile>
+    <ClCompile Include="Option.cpp">
+      <Filter>src\GameStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Gameover.cpp">
+      <Filter>src\GameStates</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Application.h">
@@ -180,6 +186,12 @@
       <Filter>src\GameObject</Filter>
     </ClInclude>
     <ClInclude Include="Credit.h">
+      <Filter>src\GameStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Option.h">
+      <Filter>src\GameStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Gameover.h">
       <Filter>src\GameStates</Filter>
     </ClInclude>
   </ItemGroup>

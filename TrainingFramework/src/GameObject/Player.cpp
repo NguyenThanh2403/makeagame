@@ -128,6 +128,11 @@ float Player::distance(Vector2 pos, Vector2 target)
 	return sqrt((pos.x - target.x) * (pos.x - target.x) + (pos.y - target.y) * (pos.y - target.y));
 }
 
+
+//void Player::CheckChem(std::vector<std::shared_ptr<ExplosiveEffect>>& listexp) {
+//
+//}
+
 void Player::CheckCollider(std::vector<std::shared_ptr<Bullet>>& listBullet, std::vector<std::shared_ptr<Enermy>> listEnermy)
 {
 	Vector2 pos = Get2DPosition();
@@ -140,7 +145,8 @@ void Player::CheckCollider(std::vector<std::shared_ptr<Bullet>>& listBullet, std
 				enermy->Explosive();
 				m_Heal -= enermy->GetDamage();
 					//SoundManager::GetInstance()->PauseSound("joke");
-					SoundManager::GetInstance()->AddSound("joke");
+					//SoundManager::GetInstance()->PauseSound("joke");
+					//SoundManager::GetInstance()->AddSound("joke");
 					SoundManager::GetInstance()->PlaySound("joke");
 				
 			}

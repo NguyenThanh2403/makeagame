@@ -45,14 +45,13 @@ void GSMenu::Init()
 		});
 	m_listButton.push_back(button);
 
-
 	//setting button
-	texture = ResourceManagers::GetInstance()->GetTexture("BQuit");
+	texture = ResourceManagers::GetInstance()->GetTexture("Bmore");
 	button = std::make_shared<GameButton>(model, shader, texture);
 	button->Set2DPosition(Application::screenWidth / 2, 300);
 	button->SetSize(200, 50);
 	button->SetOnClick([]() {
-		GameStateMachine::GetInstance()->ChangeState(StateTypes::STATE_Intro);
+		GameStateMachine::GetInstance()->ChangeState(StateTypes::STATE_Option);
 		});
 	m_listButton.push_back(button);
 	//exit button

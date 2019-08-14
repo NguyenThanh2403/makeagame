@@ -1,5 +1,6 @@
 #pragma once
 #include "gamestatebase.h"
+#include "GameButton.h"
 
 class GSIntro :
 	public GameStateBase
@@ -26,5 +27,6 @@ private:
 	float m_time;
 	std::shared_ptr<Sprite2D> m_BackGround;
 	std::shared_ptr<Text>  m_Text_gameName;
+	std::list<std::shared_ptr<GameButton>>	m_listButton;
 };
 

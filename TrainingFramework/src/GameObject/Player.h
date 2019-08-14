@@ -18,6 +18,7 @@ public:
 	void Chem(Vector2 pos);
 
 	void CheckCollider(std::vector<std::shared_ptr<Bullet>>& listBullet, std::vector<std::shared_ptr<Enermy>> listEnermy);
+	//void CheckChem(std::vector<std::shared_ptr<ExplosiveEffect>>& listexp);
 
 	void		SetColliderSize(float size);
 	float		GetColliderSize();

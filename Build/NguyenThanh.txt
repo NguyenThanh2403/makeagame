@@ -1,0 +1,18 @@
+Who is your "Custumer"?
+=> A Cuong, Chi Nguyet Ben phia cong ty cung cac ban hoc vien thuc tap trong 1 thang vua qua
+Why should they care?
+=> La buoi Tong ket va danh gia cho ki thuc tap dien ra trong vong 1 thang. Xem lai nhung gi hoc vien da hoc duoc qua ki thuc tap
+What outcome do you expect?
+=>Ket qua cua viec thuc tap 1 thang va thanh qua la 1 game don gian
+Why do YOU care?
+=>Day la buoi tong ket quan trong cho ki thuc tap He
+Initial Hook
+=> Make Game is Easy
+Key Idea 1
+=>Learn to C++, Visual
+Key Idea 2
+=>Giao vien Huong dan, Len Y tuong
+Key Idea 3
+=>Code chi tiet
+Conclusion:
+=> Game hoan chinh, Thanks

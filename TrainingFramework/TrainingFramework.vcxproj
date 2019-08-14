@@ -264,6 +264,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Credit.cpp" />
+    <ClCompile Include="Gameover.cpp" />
+    <ClCompile Include="Option.cpp" />
     <ClCompile Include="Samurai.cpp" />
     <ClCompile Include="src\Application.cpp" />
     <ClCompile Include="src\GameManager\ResourceManagers.cpp" />
@@ -291,6 +293,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Credit.h" />
+    <ClInclude Include="Gameover.h" />
+    <ClInclude Include="Option.h" />
     <ClInclude Include="Samurai.h" />
     <ClInclude Include="src\Application.h" />
     <ClInclude Include="src\GameConfig.h" />

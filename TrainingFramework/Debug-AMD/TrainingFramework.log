@@ -1,29 +1,26 @@
 ﻿  cl : Command line warning D9035 : option 'Gm' has been deprecated and will be removed in a future release
-  GSMenu.cpp
+  ResourceManagers.cpp
 C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\Helper\ThreadPool.h(37,13): warning C4477:  'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'std::thread::id'
 C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\Soloud\include\soloud.h(37,1): warning C4005:  'WIN32_LEAN_AND_MEAN': macro redefinition
+  Generating Code...
+  Compiling...
+  SoundManager.cpp
 C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\Include\AMD\EGL\eglplatform.h(67): message :  see previous definition of 'WIN32_LEAN_AND_MEAN'
-C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameStates\GSMenu.cpp(23,86): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameStates\GSMenu.cpp(23,55): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameStates\GSMenu.cpp(30,49): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameStates\GSMenu.cpp(41,49): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameStates\GSMenu.cpp(52,49): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameStates\GSMenu.cpp(61,49): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameStates\GSMenu.cpp(72,70): warning C4244:  'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1555,71): warning C4244:  'argument': conversion from '_Ty' to 'float', possible loss of data
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1555,71): warning C4244:         with
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1555,71): warning C4244:         [
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1555,71): warning C4244:             _Ty=double
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1555,71): warning C4244:         ]
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :  see reference to function template instantiation 'std::_Ref_count_obj<_Ty>::_Ref_count_obj<std::shared_ptr<Shaders>&,std::shared_ptr<Font>&,const char(&)[9],TEXT_COLOR,double>(std::shared_ptr<Shaders> &,std::shared_ptr<Font> &,const char (&)[9],TEXT_COLOR &&,double &&)' being compiled
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :         with
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :         [
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :             _Ty=Text
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :         ]
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :  see reference to function template instantiation 'std::_Ref_count_obj<_Ty>::_Ref_count_obj<std::shared_ptr<Shaders>&,std::shared_ptr<Font>&,const char(&)[9],TEXT_COLOR,double>(std::shared_ptr<Shaders> &,std::shared_ptr<Font> &,const char (&)[9],TEXT_COLOR &&,double &&)' being compiled
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :         with
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :         [
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :             _Ty=Text
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\memory(1608): message :         ]
-C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\GameStates\GSMenu.cpp(71): message :  see reference to function template instantiation 'std::shared_ptr<Text> std::make_shared<Text,std::shared_ptr<Shaders>&,std::shared_ptr<Font>&,const char(&)[9],TEXT_COLOR,double>(std::shared_ptr<Shaders> &,std::shared_ptr<Font> &,const char (&)[9],TEXT_COLOR &&,double &&)' being compiled
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\TrainingFramework\src\Helper\ThreadPool.h(37,13): warning C4477:  'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'std::thread::id'
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\Soloud\include\soloud.h(37,1): warning C4005:  'WIN32_LEAN_AND_MEAN': macro redefinition
+  Generating Code...
+  GameStatebase.cpp
+  GameStateMachine.cpp
+  GSPlay.cpp
+  GSMenu.cpp
+  GSIntro.cpp
+  Player.cpp
+  Enermy.cpp
+  Application.cpp
+  Samurai.cpp
+  Option.cpp
+  Gameover.cpp
+  Credit.cpp
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\Include\AMD\EGL\eglplatform.h(67): message :  see previous definition of 'WIN32_LEAN_AND_MEAN'
+C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\Include\AMD\EGL\eglplatform.h(67): message : Skipping... (no relevant changes detected)
   TrainingFramework.vcxproj -> C:\Users\loana\Downloads\Programming_lesson_08 (1)\Programming\\BIN-AMD\TrainingFramework.exe

@@ -12,8 +12,11 @@ SoundManager::SoundManager()
 
 SoundManager::~SoundManager()
 {
+	m_Soloud;
+	m_MapWave;
+	
+	
 }
-
 void SoundManager::AddSound(const std::string& name)
 {
 	auto it = m_MapWave.find(name);
